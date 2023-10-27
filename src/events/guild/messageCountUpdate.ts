@@ -21,7 +21,7 @@ export default {
          else {  await new levelsModel({ guildId: d.guildId, memberId: d.memberId, messageCount: d.count,}).save();}
        
        })
-       await  client.levelsCache.clear();
+         client.levelsCache.clear();
           
 
 
