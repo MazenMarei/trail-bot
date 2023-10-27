@@ -26,7 +26,7 @@ export default {
         await interaction.editReply({
             embeds: [
                 new EmbedBuilder()
-                .setTitle(`${rank} ${hypixelProfile.player.displayname}`)
+                .setTitle(`${rank ? rank : ""} ${hypixelProfile.player.displayname}`)
                 .setColor("Random")
                 .setThumbnail(`https://crafatar.com/avatars/${uuid.id}`)
                 .setDescription(`**Bedwars Level:** **${Math.floor(bedwarsLevel) || 0}**⭐\n**Skywars Level:** **${Math.floor(SkywarsLevel) || 0}**🛠️\n**Duels Wins:** **${hypixelProfile.player.stats.Duels.wins || 0}**🏆`) 
