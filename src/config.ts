@@ -1,13 +1,13 @@
 export default {
-    token       : "",
+    token       : "",   /// bot token
     prefix      : "-",
-    Mongoose    :"",
+    Mongoose    :"", /// Mongoose database connection url
     debugMode   : true,
-    joinChannelID : "",
-    hypixelApiKey: "",
-    reminderTime : "", ///  hoursin 24:minutes
-    dailyReminder : {
-        guild : "" ,
-         channel : ""
+    joinChannelID : "", /// welcome channel ID
+    hypixelApiKey: "", /// hypixel API key
+    reminderTime : "", ///  hours in 24 formate :minutes
+    dailyReminder : { 
+        guild : "" , ///  guild Id for daily reminder
+         channel : "" /// channel id for daily reminder
     }
 }
