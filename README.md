@@ -1,4 +1,4 @@
-# devroom-trail
+# Devroom-trail
 ## Bot futters :
     1)  Send welcome message when a new member join the server
     2)  Message level system and count memebrs messages
@@ -27,6 +27,8 @@
   - reminderTime : specify time in 24h formate to send daily message
   - dailyReminder.guild : specify the guild for the daily reminder
   - dailyReminder.channel : specify the channel for the daily reminder
+  - dailyReminder.message : specify the message you want to send daily
+  - dailyReminder.timezone : specify your timezone
  
   ##  - Run the bot :
    - open terminal in bot dir. and wirght `npm run start `
