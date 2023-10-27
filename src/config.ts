@@ -7,7 +7,11 @@ export default {
     hypixelApiKey: "", /// hypixel API key
     reminderTime : "", ///  hours in 24 formate :minutes
     dailyReminder : { 
-        guild : "" , ///  guild Id for daily reminder
-         channel : "" /// channel id for daily reminder
+        guild   : "" , ///  guild Id for daily reminder
+        channel : "", /// channel id for daily reminder
+        message : "",
+        timezone : ""
+
+         
     }
 }

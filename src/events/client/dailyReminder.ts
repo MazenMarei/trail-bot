@@ -22,17 +22,18 @@ export default {
 	once: false,
 	function: async function () {
         let time = config.reminderTime.split(":")
+        
         const job = new CronJob(`${time[1]} ${time[0]} * * *`,
-        async function () {
+        async function () {    
            let Guild = (await client.guilds.fetch(config.dailyReminder.guild)) as Guild
-           if(!Guild) return
+           if(!Guild) return console.log("No channel");
            let channel = await Guild.channels.fetch(config.dailyReminder.channel)  as GuildTextBasedChannel
-           if(!channel) return;
-           await channel.send({content :"A daily reminder message has been sent!"})
+           if(!channel) return console.log("No guild");
+           await channel.send({content : config.dailyReminder.message})
         },
         null,
         true,
-        "UTC+3"
+        config.dailyReminder.timezone
     );
     }
 }
