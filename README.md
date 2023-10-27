@@ -1,4 +1,4 @@
-# devroom-trail
+# Devroom-trail
 ## Bot futters :
     1)  Send welcome message when a new member join the server
     2)  Message level system and count memebrs messages
