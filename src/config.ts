@@ -5,11 +5,11 @@ export default {
     debugMode   : true,
     joinChannelID : "", /// welcome channel ID
     hypixelApiKey: "", /// hypixel API key
-    reminderTime : "", ///  hours in 24 formate :minutes
+    reminderTime : "21:48", ///  hours in 24 formate :minutes
     dailyReminder : { 
         guild   : "" , ///  guild Id for daily reminder
         channel : "", /// channel id for daily reminder
-        message : "",
+        message : "a daily message!",
         timezone : ""
 
          
