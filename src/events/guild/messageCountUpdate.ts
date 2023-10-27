@@ -25,6 +25,6 @@ export default {
           
 
 
-    }, 10 * 2000)
+    }, 10 * 6000)
     }
 } as any;
