@@ -19,7 +19,7 @@ export default {
         let hypixelProfile = await fetch(`https://api.hypixel.net/player?uuid=${uuid.id}`, { headers: {"API-Key":config.hypixelApiKey} }).then((r) => r.json()).catch((err) => null)  as apiResponse;
         if(uuid.errorMessage) return await interaction.editReply({ embeds: [new EmbedBuilder().setColor("DarkRed").setDescription(`**${uuid.errorMessage}**`)] });
         let rank = hypixelProfile.player.rank ? `[${hypixelProfile.player.rank}]` : ranksString[`${hypixelProfile.player.monthlyPackageRank}`] || ranksString[`${hypixelProfile.player.newPackageRank}`]  ||  ranksString[`${hypixelProfile.player.packageRank}`] || null;
-		let level = `https://gen.plancke.io/exp/${hypixelProfile.player.displayname}.png`;
+	let level = `https://gen.plancke.io/exp/${hypixelProfile.player.displayname}.png`;
         let bedwarsLevel = calculateBedWarsLevel(hypixelProfile.player.stats.Bedwars.Experience);
         let SkywarsLevel = calculateSkywarsExactLevel(hypixelProfile.player.stats.SkyWars.skywars_experience);
         if(hypixelProfile.player.prefix &&  hypixelProfile.player.prefix !== "NONE") rank = hypixelProfile.player?.prefix?.replace(/\u00A7[0-9A-FK-OR]/ig, "");
